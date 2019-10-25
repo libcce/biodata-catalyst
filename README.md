@@ -37,7 +37,6 @@ Available Markdown elements for use and syntax:
 | Table | `| Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
 | Footnote | `Here's a sentence with a footnote. [^1]  [^1]: This is the footnote.` |
-| Definition List | `term : definition` |
 
 
 Text prior to footnote reference.[^2]
@@ -55,22 +54,6 @@ console.log('Here is some JavaScript.');
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-`term 
-: definition`
- 
----
-
-
- 
-{% tabs %}
-{% tab title="First Tab" %}
-Here is first tab content.
-{% endtab %}
-{% tab title="Second Tab" %}
-Here is second tab content.
-{% endtab %}
-{% endtabs %}
 
 
 ## Explicit HTML is Ignored
