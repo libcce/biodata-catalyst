@@ -60,3 +60,41 @@ The following extended Markdown syntax is acceptable:
 | Strikethrough | `~~The world is flat.~~` |
 | Task List | `- [x] Write the press release - [ ] Update the website - [ ] Contact the media` |
 
+### My Great Heading {#custom-id}
+Here's a sentence with a footnote. [^1]  [^1]: This is the footnote.
+term 
+: definition
+	~~The world is flat.~~
+ - [x] Write the press release - [ ] Update the website - [ ] Contact the media
+ {% page-ref page="../index.md" %}
+ [a link like this](./README.md)
+ {% code-tabs %}
+{% code-tabs-item title="myfile.py" %}
+```python
+print('Here is a nice Python code block.')
+```
+{% endcode-tabs-item %}
+{% code-tabs-item title="myfile.js" %}
+```js
+console.log('Here is some JavaScript.');
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+{% tabs %}
+{% tab title="First Tab" %}
+Here is first tab content.
+{% endtab %}
+
+{% tab title="Second Tab" %}
+Here is second tab content.
+{% endtab %}
+{% endtabs %}
+$$
+e^{\pi i} + 1 = 0
+$$
+{% file src="sample-downloadable-file.txt" %}
+ 
+
+
+
+
