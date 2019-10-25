@@ -61,14 +61,9 @@ The following extended Markdown syntax is acceptable:
 | Task List | `- [x] Write the press release - [ ] Update the website - [ ] Contact the media` |
 
 ### My Great Heading {#custom-id}
-Here's a sentence with a footnote. [^1]  [^1]: This is the footnote.
-term 
-: definition
-	~~The world is flat.~~
- - [x] Write the press release - [ ] Update the website - [ ] Contact the media
- {% page-ref page="../index.md" %}
- [a link like this](./README.md)
- {% code-tabs %}
+Here's a sentence with a footnote. [^1]  
+
+{% code-tabs %}
 {% code-tabs-item title="myfile.py" %}
 ```python
 print('Here is a nice Python code block.')
@@ -80,7 +75,29 @@ console.log('Here is some JavaScript.');
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-{% tabs %}
+
+{% hint style="info" %}
+This is an informational admonishment.
+{% endhint %}
+
+{% file src="sample-downloadable-file.txt" %}
+
+term 
+: definition
+ 
+---
+
+$$
+e^{\pi i} + 1 = 0
+$$
+
+~~The world is flat.~~
+
+ - [x] Write the press release 
+ - [ ] Update the website 
+ - [ ] Contact the media
+ 
+ {% tabs %}
 {% tab title="First Tab" %}
 Here is first tab content.
 {% endtab %}
@@ -89,12 +106,5 @@ Here is first tab content.
 Here is second tab content.
 {% endtab %}
 {% endtabs %}
-$$
-e^{\pi i} + 1 = 0
-$$
-{% file src="sample-downloadable-file.txt" %}
- 
 
-
-
-
+[^1]: This is the footnote.
