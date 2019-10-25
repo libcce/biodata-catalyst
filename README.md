@@ -251,17 +251,11 @@ I don't think we'll be using this construct.)
 {% endapi-method-spec %}
 {% endapi-method %}
 
-## Explore why these aren't working
+## Note 
 
-Text prior to footnote reference.[^2]
-[^2]: Comment to include in footnote.
+Footnotes not working, explore references:
+https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md#footnotes
 
-References
-There is another way to create links which does not interrupt the text flow. The URL and title are defined using a reference name and this reference name is then used in square brackets instead of the link URL:
 
-This is [an example][id] reference-style link.
-Then, anywhere in the document, you define your link label like this, on a line by itself:
-
-[id]: http://example.com/  "Optional Title Here"
 
 
