@@ -37,7 +37,7 @@ Available Markdown elements for use and syntax:
 | Horizontal Rule | `---` |
 | Link | `[title](https://www.example.com)` |
 | Image | `![alt text](image.jpg)` |
-| Table | ` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ` |
+| Table | ``` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ``` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
 
 
