@@ -16,20 +16,6 @@ objectives:
 
 These values are stored in the header so that our site will read them and make them accessible in site pages.
 
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
 
 Use standard Markdown syntax:
 
@@ -48,8 +34,6 @@ Use standard Markdown syntax:
 
 The following extended Markdown syntax is acceptable:
 
-
-
 | Element | Markdown Syntax |
 | :--- | :--- |
 | Table | `| Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |` |
@@ -59,9 +43,12 @@ The following extended Markdown syntax is acceptable:
 | Definition List | `term : definition` |
 | Strikethrough | `~~The world is flat.~~` |
 | Task List | `- [x] Write the press release - [ ] Update the website - [ ] Contact the media` |
+| Equation | `$$ e^{\pi i} + 1 = 0 $$` |
 
 ### My Great Heading {#custom-id}
-Here's a sentence with a footnote. [^1]  
+
+Text prior to footnote reference.[^2]
+[^2]: Comment to include in footnote.
 
 {% code-tabs %}
 {% code-tabs-item title="myfile.py" %}
@@ -82,29 +69,18 @@ This is an informational admonishment.
 
 {% file src="sample-downloadable-file.txt" %}
 
-term 
-: definition
+term : definition
  
 ---
 
-$$
-e^{\pi i} + 1 = 0
-$$
 
-~~The world is flat.~~
-
- - [x] Write the press release 
- - [ ] Update the website 
- - [ ] Contact the media
  
- {% tabs %}
+{% tabs %}
 {% tab title="First Tab" %}
 Here is first tab content.
 {% endtab %}
-
 {% tab title="Second Tab" %}
 Here is second tab content.
 {% endtab %}
 {% endtabs %}
 
-[^1]: This is the footnote.
