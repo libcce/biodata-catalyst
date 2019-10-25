@@ -252,3 +252,5 @@ This gets rendered as:
 
 Once again, the file path is relative to the current Markdown file’s location
 in the Git repository.
+
+<u>underlined text</u>
