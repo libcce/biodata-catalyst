@@ -195,6 +195,20 @@ current document; for instance, to link to the previous page, I can write:
 (which generates [a link like this](./repo-structure.md)), rather than having
 the link text be `./gitbook-spec/repo-structure.md`.
 
+You can also write a page reference that is called out fairly aggressively
+like so:
+
+```
+{% page-ref page="README.md" %}
+```
+
+This gets rendered as:
+
+{% page-ref page="README.md" %}
+
+Once again, the file path is relative to the current Markdown file’s location
+in the Git repository.
+
 ## Web API Method Styling
 
 GitBook provides a fairly elaborate framework for document Web API methods.
@@ -242,16 +256,12 @@ I don't think we'll be using this construct.)
 Text prior to footnote reference.[^2]
 [^2]: Comment to include in footnote.
 
-You can also write a page reference that is called out fairly aggressively
-like so:
+References
+There is another way to create links which does not interrupt the text flow. The URL and title are defined using a reference name and this reference name is then used in square brackets instead of the link URL:
 
-```
-{% page-ref page="../index.md" %}
-```
+This is [an example][id] reference-style link.
+Then, anywhere in the document, you define your link label like this, on a line by itself:
 
-This gets rendered as:
+[id]: http://example.com/  "Optional Title Here"
 
-{% page-ref page="../index.md" %}
 
-Once again, the file path is relative to the current Markdown file’s location
-in the Git repository.
