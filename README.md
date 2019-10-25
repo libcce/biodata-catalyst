@@ -37,7 +37,7 @@ Available Markdown elements for use and syntax:
 | Horizontal Rule | `---` |
 | Link | `[title](https://www.example.com)` |
 | Image | `![alt text](image.jpg)` |
-| Table | ```````| Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |``````` |
+| Table | ``````` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ``````` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
 
 
@@ -142,14 +142,13 @@ We do *not* recommend using the “tabs” feature, however, since it can be
 confusing if people don’t realize that there are different pieces of code
 associated with the different tabs.
 
-## Admonishments
+## Callouts
 
-You can include “admonishment” paragraphs that are called out in a special
-box. Sample syntax is:
+You can include callout boxes which highlight content. Sample syntax is:
 
 ```
 {% hint style="info" %}
-This is an informational admonishment.
+This is an informational callout.
 {% endhint %}
 ```
 
