@@ -37,22 +37,25 @@ Available Markdown elements for use and syntax:
 | Horizontal Rule | `---` |
 | Link | `[title](https://www.example.com)` |
 | Image | `![alt text](image.jpg)` |
-| Table | ``` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ``` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
 
+## Table Markdown
 
-{% code-tabs %}
-{% code-tabs-item title="myfile.py" %}
-```python
-print('Here is a nice Python code block.')
+GitBook allows table markdown. For instance, the following Markdown:
+
 ```
-{% endcode-tabs-item %}
-{% code-tabs-item title="myfile.js" %}
-```js
-console.log('Here is some JavaScript.');
+| Name | Description |
+| :-- |
+| First | This is the first. |
+| Second | This is the second. |
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+
+Displays:
+
+| Name | Description |
+| :-- |
+| First | This is the first. |
+| Second | This is the second. |
 
 
 ## Explicit HTML is Ignored
@@ -63,7 +66,7 @@ arbitrary HTML content in your Markdown will not be honored.
 
 ## Display Equations
 
-GitBook supports display equations compiled with LaTeX. Just encase them in
+GitBook supports display equations compiled with LaTeX. Encase them in
 double dollar signs as you would in a LaTeX document:
 
 ```
@@ -235,14 +238,6 @@ I don't think we'll be using this construct.)
 {% endapi-method %}
 
 ## Explore why these aren't working
-
-
-```
-| Name | Description |
-| :-- |
-| First | This is the first. |
-| Second | This is the second. |
-```
 
 Text prior to footnote reference.[^2]
 [^2]: Comment to include in footnote.
