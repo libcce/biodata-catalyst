@@ -16,6 +16,9 @@ objectives:
 
 These values are stored in the header so that our site will read them and make them accessible in site pages.
 
+The title displayed at the top of each page comes from the
+[SUMMARY.md](./SUMMARY.md) file.
+
 
 Available Markdown elements for use and syntax:
 
@@ -34,13 +37,9 @@ Available Markdown elements for use and syntax:
 | Horizontal Rule | `---` |
 | Link | `[title](https://www.example.com)` |
 | Image | `![alt text](image.jpg)` |
-| Table | `| Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |` |
+| Table | ```````| Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text |``````` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
-| Footnote | `Here's a sentence with a footnote. [^1]  [^1]: This is the footnote.` |
 
-
-Text prior to footnote reference.[^2]
-[^2]: Comment to include in footnote.
 
 {% code-tabs %}
 {% code-tabs-item title="myfile.py" %}
@@ -154,33 +153,31 @@ This is an informational admonishment.
 {% endhint %}
 ```
 
-The styles are `info`, `success`, `warning`, and `danger`. Here’s an info admonishment:
+Callout styles available include `info`, `success`, `warning`, and `danger`. 
+
+Info:
 
 {% hint style="info" %}
-This is an informational admonishment.
+This is an informational callout.
 {% endhint %}
 
-And here’s `success`:
+Success:
 
 {% hint style="success" %}
 Good job, you did it!
 {% endhint %}
 
-And here’s `warning`:
+Warning:
 
 {% hint style="warning" %}
 Something might go wrong.
 {% endhint %}
 
-And here’s `danger`:
+Danger:
 
 {% hint style="danger" %}
 Danger Zone!
 {% endhint %}
-
-
-it will be ignored. The title displayed at the top of each page comes from the
-[SUMMARY.md](./repo-structure.md#summary-md) file.
 
 
 ## Internal Links
@@ -196,30 +193,12 @@ current document; for instance, to link to the previous page, I can write:
 (which generates [a link like this](./repo-structure.md)), rather than having
 the link text be `./gitbook-spec/repo-structure.md`.
 
-Other forms might work, but I haven’t tried!
-
-You can also write a page reference that is called out fairly aggressively
-like so:
-
-```
-{% page-ref page="../index.md" %}
-```
-
-This gets rendered as:
-
-{% page-ref page="../index.md" %}
-
-Once again, the file path is relative to the current Markdown file’s location
-in the Git repository.
-
 ## Web API Method Styling
 
 GitBook provides a fairly elaborate framework for document Web API methods.
 The interactive entry form is documented
 [here](https://docs.gitbook.com/content-editing/rich-content#api-methods).
-However, the structured used here is highly tuned towards modern web APIs that
-are unlike WWT’s, so we don’t expect the special syntax to be very useful in
-the WWT context. For reference, here is *a subset* of the special tags used in
+For reference, here is *a subset* of the special tags used in
 the Markdown representation of this construct:
 
 ```
@@ -255,3 +234,22 @@ Method description.
 I don't think we'll be using this construct.)
 {% endapi-method-spec %}
 {% endapi-method %}
+
+## Explore why these aren't working
+
+Text prior to footnote reference.[^2]
+[^2]: Comment to include in footnote.
+
+You can also write a page reference that is called out fairly aggressively
+like so:
+
+```
+{% page-ref page="../index.md" %}
+```
+
+This gets rendered as:
+
+{% page-ref page="../index.md" %}
+
+Once again, the file path is relative to the current Markdown file’s location
+in the Git repository.
