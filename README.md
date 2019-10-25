@@ -37,7 +37,7 @@ Available Markdown elements for use and syntax:
 | Horizontal Rule | `---` |
 | Link | `[title](https://www.example.com)` |
 | Image | `![alt text](image.jpg)` |
-| Table | ``````` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ``````` |
+| Table | ` | Syntax | Description | | ----------- | ----------- | | Header | Title | | Paragraph | Text | ` |
 | Fenced Code Block | ``````` {   "firstName": "John",   "lastName": "Smith",   "age": 25 } ``````` |
 
 
@@ -64,7 +64,7 @@ arbitrary HTML content in your Markdown will not be honored.
 ## Display Equations
 
 GitBook supports display equations compiled with LaTeX. Just encase them in
-double dollas as you would in a LaTeX document:
+double dollar signs as you would in a LaTeX document:
 
 ```
 $$
@@ -252,5 +252,3 @@ This gets rendered as:
 
 Once again, the file path is relative to the current Markdown file’s location
 in the Git repository.
-
-<u>underlined text</u>
