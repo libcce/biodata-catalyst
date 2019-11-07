@@ -116,19 +116,19 @@ console.log('Here is some JavaScript.');
 
 This gets rendered as:
 
-{% code-tabs %}
-{% code-tabs-item title="myfile.py" %}
+{% tabs %}
+{% tab title="myfile.py" %}
 ```python
 print('Here is a nice Python code block.')
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="myfile.js" %}
+{% tab title="myfile.js" %}
 ```javascript
 console.log('Here is some JavaScript.');
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 We do _not_ recommend using the “tabs” feature, however, since it can be confusing if people don’t realize that there are different pieces of code associated with the different tabs.
 
