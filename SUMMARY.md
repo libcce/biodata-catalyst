@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Markdown Formatting](README.md)
+* [Introduction](README.md)
+* [Markdown Formatting](markdown-formatting.md)
 * [Content Guide](content-guide.md)
 * [Video Guide](video-guide.md)
 

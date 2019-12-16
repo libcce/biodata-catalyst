@@ -18,5 +18,5 @@ Create meaningful labels/tags for the video and make sure the video can be seen 
 
 _See_ [_Presentation Tips From Nancy Duarte’s Slide:ology_](https://www.huffpost.com/entry/presentation-tips-slideology_b_2278955)\_\_
 
-
+![](.gitbook/assets/terra_from_dockstore1.png)
 
