@@ -6,7 +6,7 @@ GitBook creates a SUMMARY.md file in the root of the repository. The title of th
 
 ## Available Markdown 
 
-Available mMrkdown elements for use and syntax:
+Available Markdown elements for use and syntax:
 
 | Element | `Markdown Syntax` |
 | :--- | :--- |
