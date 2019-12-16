@@ -1,24 +1,12 @@
 # Markdown Formatting
 
-## File Header
+## Title and Summary
 
-Each file's YAML header must contain:
+GitBook creates a SUMMARY.md file in the root of the repository. The title of the Markdown page is listed in the SUMMARY.md page. 
 
-```text
----
-title: "NHLBI BioData Catalyst Tutorial"
-description: "NHLBI BioData Catalyst Tutorial"
-time: 10
-objectives:
-- "Demonstrate the use of data search tools."
----
-```
+## Available Markdown 
 
-These values are stored in the header so that our site will read them and make them accessible in site pages.
-
-The title displayed at the top of each page comes from the [SUMMARY.md](https://github.com/libcce/biodata-catalyst/tree/14eae261fe7c276e06e63b88456c0b2bca3e6494/SUMMARY.md) file.
-
-Available Markdown elements for use and syntax:
+Available mMrkdown elements for use and syntax:
 
 | Element | `Markdown Syntax` |
 | :--- | :--- |
@@ -181,7 +169,7 @@ To make an internal link, make a link beginning with `./` and pointing to the na
 You can also write a page reference that is called out fairly aggressively like so:
 
 ```text
-{% page-ref page="README.md" %}
+{% page-ref page="Available-Markdown.md" %}
 ```
 
 This gets rendered as:
@@ -247,5 +235,5 @@ Method description.
 
 ## Note
 
-Footnotes not working, explore references: [https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md\#footnotes](https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md#footnotes)
+There are issues with footnotes in GitBook, in the meantime explore references: [https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md\#footnotes](https://github.com/GitbookIO/gitbook/blob/master/docs/syntax/markdown.md#footnotes)
 
